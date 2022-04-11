@@ -55,7 +55,7 @@
 			</form>
 			<div class="social-login-group">
 				<div class="kakao-login-button">
-					<a href="https://kauth.kakao.com/oauth/authorize?client_id=445c67c418c3533fd50992227666469c&redirect_uri=http://localhost:80/web/member/klogin.do&response_type=code">
+					<a href="https://kauth.kakao.com/oauth/authorize?client_id=445c67c418c3533fd50992227666469c&redirect_uri=http://ec2-13-209-69-205.ap-northeast-2.compute.amazonaws.com/booqueen/member/klogin.do&response_type=code">
 						<img class="kakao" src="${contextPath}/resources/user/images/kakaolink_btn_small.png">
 					</a>
 				</div>
