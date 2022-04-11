@@ -145,7 +145,7 @@
 	<div style="padding: 40px 18%;">
 		<div class="page-heading" id="tcs_s8" style="margin-bottom: 16px;">
 			<div id="tcs_s2">
-				<h1 class="bui-text bui-text--variant-headline_1 text-black" style="margin-bottom: 6px;">서비스 이용약관 (고객용)</h1>
+				<h1 class="bui-text bui-text--variant-headline_1 text-black" style="margin-bottom: 6px;">서비스 이용약관</h1>
 				<p class="bui-text bui-text--variant-body_2 bui-text--color-neutral_alt m-0" style="color: #6b6b6b;font-size: 14px;">마지막 업데이트: 2022년 4월 6일</p>
 			</div>
 			<a href="javascript:window.print()" class="bui-group__item bui-button bui-button--tertiary bui-button--large bui-button--negative-inset-adjustment--start font-normal hide_this_for_print" role="button" data-bui-component="Button" style="color: #0071c2; text-decoration: none; gap: 10px;">

@@ -453,7 +453,12 @@ function passwdCheck() {
 }
 
 function disabled_Btn(){
-	alert("다가올 예약이 있는 경우 탈퇴가 불가능합니다.");
+// 	alert("다가올 예약이 있는 경우 탈퇴가 불가능합니다.");
+	swal({
+		   title: "죄송합니다.",
+		   text: "다가올 예약이 있는 경우 탈퇴가 불가능합니다.",
+		   icon: "warning" //"info,success,warning,error" 중 택1
+		});
 }
 	
 </script>

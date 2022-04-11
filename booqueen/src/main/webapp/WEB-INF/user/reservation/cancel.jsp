@@ -275,10 +275,20 @@
 			success: function(data){
 				
 				if(data === 'success'){
-					alert("정상적으로 결제가 취소되었습니다.");
+// 					alert("정상적으로 결제가 취소되었습니다.");
+					swal({
+//			 			   title: "타이틀",
+						   text: "정상적으로 결제가 취소되었습니다.",
+						   icon: "info" //"info,success,warning,error" 중 택1
+						});
 					$('#cancel_reservation').submit();
 				} else{
-					alert("결제 취소가 정상적으로 이루어지지 않았습니다.");
+// 					alert("결제 취소가 정상적으로 이루어지지 않았습니다.");
+					swal({
+//			 			   title: "타이틀",
+						   text: "결제 취소가 정상적으로 이루어지지 않았습니다.",
+						   icon: "info" //"info,success,warning,error" 중 택1
+						});
 				}
 				
 			}

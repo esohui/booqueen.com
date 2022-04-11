@@ -1854,10 +1854,20 @@
 	</script>
 	<script>
 	function disabled_btn(){
-		alert('로그인 후 예약을 진행해주세요!');
+// 		alert('로그인 후 예약을 진행해주세요!');
+		swal({
+// 			   title: "타이틀",
+			   text: "로그인 후 예약을 진행해주세요!",
+			   icon: "info" //"info,success,warning,error" 중 택1
+			});
 	}
 	function blocked_btn(reason){
-		alert('죄송합니다.\n\n고객님은 다음과 같은 사유로 해당 호텔을 예약하실 수 없습니다.\n\n사유: ' + reason);
+// 		alert('죄송합니다.\n\n고객님은 다음과 같은 사유로 해당 호텔을 예약하실 수 없습니다.\n\n사유: ' + reason);
+		swal({
+			   title: "죄송합니다.",
+			   text: '\n\n고객님은 다음과 같은 사유로\n해당 호텔을 예약하실 수 없습니다.\n\n사유: ' + reason,
+			   icon: "info" //"info,success,warning,error" 중 택1
+			});
 	}
 	
 	$(document).ready(function () {
@@ -2177,7 +2187,12 @@
                     }
                 })
             } else {
-            	alert("로그인을 하시면 저장된 위시리스트를 활용하실 수 있어요!");
+//             	alert("로그인을 하시면 저장된 위시리스트를 활용하실 수 있어요!");
+            	swal({
+//      			   title: "죄송합니다.",
+     			   text: "로그인을 하시면 저장된 위시리스트를 활용하실 수 있어요!",
+     			   icon: "info" //"info,success,warning,error" 중 택1
+     			});
             } 
         }
     </script>
@@ -2342,7 +2357,12 @@
 			if(!isEmpty(userCheck)){
 				qnaPanel.style.display = 'block';	
 			} else {
-				alert('로그인 후 이용해주세요!');
+// 				alert('로그인 후 이용해주세요!');
+				swal({
+//		 			   title: "타이틀",
+					   text: "로그인 후 이용해주세요!",
+					   icon: "info" //"info,success,warning,error" 중 택1
+					});
 			}
 		});
 		
@@ -2350,7 +2370,12 @@
 			if(!isEmpty(userCheck)){
 				qnaPanel.style.display = 'block';	
 			} else {
-				alert('로그인 후 이용해주세요!');
+// 				alert('로그인 후 이용해주세요!');
+				swal({
+//		 			   title: "타이틀",
+					   text: "로그인 후 이용해주세요!",
+					   icon: "info" //"info,success,warning,error" 중 택1
+					});
 			}
 		});
 		
@@ -2415,11 +2440,21 @@
 		    , dataType: 'json'
 		    , contentType: 'application/json'
 		    , success : function(data) {
-		    	alert(data + '개의 문의가 정상적으로 전송되었습니다!');
+// 		    	alert(data + '개의 문의가 정상적으로 전송되었습니다!');
+		    	swal({
+//		 			   title: "타이틀",
+					   text: '1개의 문의가 정상적으로 전송되었습니다!',
+					   icon: "info" //"info,success,warning,error" 중 택1
+					});
 		    	$('#qnaPanel').css("display", "none");
    	     	},
    	    	error : function() {
-				alert('다시 시도해주세요!');			
+// 				alert('다시 시도해주세요!');
+				swal({
+//		 			   title: "타이틀",
+					   text: "다시 시도해주세요!",
+					   icon: "info" //"info,success,warning,error" 중 택1
+					});
 			}
     	})
     }
@@ -2483,7 +2518,12 @@
 	           }
 	        },
 	       	error : function() {
-				alert('error');			
+				alert('error');		
+				swal({
+//		 			   title: "타이틀",
+					   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+					   icon: "error" //"info,success,warning,error" 중 택1
+					});
 			}
 	   })
 	}

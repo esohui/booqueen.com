@@ -398,7 +398,12 @@
 		$("#hotel_tel_input").select();
 		document.execCommand('copy');
 		$("#hotel_tel_input").attr('type', 'hidden');
-		alert("연락처가 복사되었습니다.");
+// 		alert("연락처가 복사되었습니다.");
+		swal({
+//			   title: "타이틀",
+			   text: "연락처가 복사되었습니다.",
+			   icon: "info" //"info,success,warning,error" 중 택1
+			});
 	});
 	
 	$('#hotel_email').click(function(){
@@ -406,7 +411,12 @@
 		$("#hotel_email_input").select();
 		document.execCommand('copy');
 		$("#hotel_email_input").attr('type', 'hidden');
-		alert("이메일이 복사되었습니다.");
+// 		alert("이메일이 복사되었습니다.");
+		swal({
+//			   title: "타이틀",
+			   text: "이메일이 복사되었습니다.",
+			   icon: "info" //"info,success,warning,error" 중 택1
+			});
 	})
 	
 	var reservation_number = '${reservationVO.reservation_number}';

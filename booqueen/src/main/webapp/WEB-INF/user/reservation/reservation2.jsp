@@ -256,14 +256,29 @@
 			data: JSON.stringify(reservationVO),
 			success : 	function(data) {
 				if (data === "available") {
-					alert('예약이 가능합니다. 결제를 계속 진행해주세요.');
+// 					alert('예약이 가능합니다. 결제를 계속 진행해주세요.');
+					swal({
+//			 			   title: "타이틀",
+						   text: "예약이 가능합니다. 결제를 계속 진행해주세요.",
+						   icon: "info" //"info,success,warning,error" 중 택1
+						});
 					payment();
 				} else {
-					alert('죄송합니다.\n\n다른 고객님이 해당 객실을 예약하고 있는 중입니다.\n\n다른 날짜나 객실을 이용해주시기 바랍니다.');
+// 					alert('죄송합니다.\n\n다른 고객님이 해당 객실을 예약하고 있는 중입니다.\n\n다른 날짜나 객실을 이용해주시기 바랍니다.');
+					swal({
+			 			   title: "죄송합니다",
+						   text: "다른 고객님이 해당 객실을 예약하고 있는 중입니다.\n\n다른 날짜나 객실을 이용해주시기 바랍니다.",
+						   icon: "info" //"info,success,warning,error" 중 택1
+						});
 				}
 			},
 			error	:	function(data){
-				alert("시스템 에러가 발생하였습니다. 다시 시도해주세요.");
+// 				alert("시스템 에러가 발생하였습니다. 다시 시도해주세요.");
+				swal({
+//		 			   title: "타이틀",
+					   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+					   icon: "error" //"info,success,warning,error" 중 택1
+					});
 			}
 		});
 	}
@@ -309,7 +324,12 @@
                      var merchant = String(req.merchant_uid);
                      
                      if(req.paid_amount == data.response.amount) {
-                        alert("성공적으로 결제가 완료되었습니다!");
+//                         alert("성공적으로 결제가 완료되었습니다!");
+                        swal({
+//     		 			   title: "타이틀",
+     					   text: "성공적으로 결제가 완료되었습니다!",
+     					   icon: "info" //"info,success,warning,error" 중 택1
+     					});
                         
                         var paymentVO = {
                         					"imp_uid" : imp_uid_from_req,

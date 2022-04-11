@@ -14,7 +14,7 @@
 <!-- <script src="https://kit.fontawesome.com/d2826a4f92.js" crossorigin="anonymous"></script> -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  -->
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body>
@@ -421,7 +421,12 @@
 	           })
 	        },
 	       	error : function() {
-				alert('error');			
+// 				alert('error');			
+				swal({
+//		 			   title: "타이틀",
+					   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+					   icon: "error" //"info,success,warning,error" 중 택1
+					});
 			}
 	   })
 	}
@@ -490,7 +495,12 @@
 	        	})
    	     	},
    	    	error : function() {
-				alert('error');			
+// 				alert('error');
+				swal({
+//		 			   title: "타이틀",
+					   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+					   icon: "error" //"info,success,warning,error" 중 택1
+					});
 			}
     	})
     }

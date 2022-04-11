@@ -538,6 +538,7 @@ public class MemberController{
 				out.println("<script>alert('카카오 회원가입 성공! 로그인해 주세요.')</script>");
 	            out.flush();
 			}
+			return "member/loginForm";
 		}
 		
 		session.setAttribute("user_profile", profile);

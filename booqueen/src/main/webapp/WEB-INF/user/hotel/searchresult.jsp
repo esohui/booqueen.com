@@ -103,6 +103,8 @@
 						</div>
 					</form>
 				</div>
+				
+				<c:if test="${!empty hotelList}">
 				<div class="map">
 					<div class="map-back" style="background-image: url(${contextPath}/resources/user/images/searchresultmap.png)">
 						<div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
@@ -111,6 +113,8 @@
 						</button>
 					</div>
 				</div>
+				</c:if>
+				
 				<c:if test="${!empty hotelList}">
 				<div class="filter">
 					<div class="filter-by"><h2>필터링 기준:</h2></div>
@@ -430,9 +434,12 @@
 							<span id="number_hotel">${fn:length(hotelList)}</span>개
 						</h2>
 					
+					<c:if test="${!empty hotelList}">
 					<button class="mini-map" id="mapBtn2" style="background-image: url(${contextPath}/resources/user/images/searchresultmap.png)";>
 						<i class="fas fa-map-marker-alt"></i>
 					</button>
+					</c:if>
+					
 				</div>
 				<div class="content">
 					<div class="orderby">
@@ -1425,7 +1432,12 @@ function getAvailableHotel() {
     		});
         }
        	, error : function() {
-			alert('error');			
+// 			alert('error');
+			swal({
+//	 			   title: "타이틀",
+				   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+				   icon: "error" //"info,success,warning,error" 중 택1
+				});
 		}
 		
     });
@@ -1907,7 +1919,12 @@ function getUnavailableHotel() {
                 	MapArray = [];
                 },
                 error : function(){
-                	alert('error');
+//                 	alert('error');
+                	swal({
+//     	 			   title: "타이틀",
+     				   text: "시스템 오류가 발생했습니다. 다시 시도해주세요",
+     				   icon: "error" //"info,success,warning,error" 중 택1
+     				});
                 }
             });
        

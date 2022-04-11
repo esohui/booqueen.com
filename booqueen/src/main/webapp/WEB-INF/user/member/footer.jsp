@@ -103,7 +103,12 @@
     
     <script>
     function login_check_btn(){
-		alert('로그인을 하시면 고객님의 예약 현황을 확인할 수 있습니다!');
+// 		alert('로그인을 하시면 고객님의 예약 현황을 확인할 수 있습니다!');
+		swal({
+//			   title: "타이틀",
+			   text: "로그인을 하시면 고객님의 예약 현황을 확인할 수 있습니다!",
+			   icon: "info" //"info,success,warning,error" 중 택1
+			});
 	}
     </script>
 </body>
