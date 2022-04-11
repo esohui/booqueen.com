@@ -8,6 +8,7 @@
 <title>booqueen.com</title>
 <link rel="stylesheet" href="${contextPath}/resources/partner/css/register.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$("email").on('keyup', emailcheck);
@@ -17,7 +18,7 @@ function emailcheck(){
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	var email = $("#email").val();
 	if(!email){
-		alert("이메일 주소를 입력해 주세요.")
+		alert()
 		$("#email").focus();
 		return false;
 	} else {

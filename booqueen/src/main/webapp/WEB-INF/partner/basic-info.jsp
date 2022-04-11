@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="${contextPath}/resources/partner/css/basic-info.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=29b5f78cb856dc4d592f3c3f87388524&libraries=services"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 
 	function checkForm(){
@@ -64,7 +65,7 @@
 		} else {
 			var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
 		      if (!regPhone.test(phoneNum)) {
-		          alert('올바른 전화번호를 입력해 주세요.');
+		          alert("올바른 전화번호를 입력해 주세요.")
 		          return;
 		      }
 		}

@@ -3,7 +3,7 @@
 <mapper namespace="messageDAO">
 	<select id="selectMessageListByHotelSerial" resultType="chatVO">
 		SELECT
-			DISTINCT ON(userid)
+			DISTINCT ON(reservation_number)
 			userid,
 			send_date,
 			content,
@@ -13,7 +13,7 @@
 		WHERE
 			serialnumber = #{serialnumber}
 			and reservation_number is not null
-		ORDER BY userid,
+		ORDER BY reservation_number,
 			send_date DESC,
 			send_time DESC
 	</select>

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.booqueen.admin.member.impl.MemberServiceImpl;
-import com.booqueen.admin.payment.PaymentStatusVO;
 import com.booqueen.user.member.vo.MemberProfileVO;
 
 @Controller

@@ -150,11 +150,12 @@
     	
     	userid_shared = userid;
     	RSVN = reservation_number;
+    	var path = '${contextPath}';
     	
     	var sendReply = {"userid": userid, "serialnumber": ${hotel.serialnumber}, "reservation_number": RSVN}
     	
 	    $.ajax({
-	        url:'/web/chat.do'
+	        url: path + '/chat.do'
 	        , method : 'POST'
 	        , data: JSON.stringify(sendReply)
 	        , dataType: 'json'
