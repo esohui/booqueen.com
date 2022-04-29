@@ -38,7 +38,7 @@
 | :------------: | :-------------: |
 | 운영체제 | Windows 10 64bit |
 | 개발 언어 | Java, SQL, HTML, Javascript, CSS, JQuery, Ajax, XML, JSON |
-| 개발 도구 | Eclipse, PgAdmin, PUTTY, Maven, Java ORM Plugin |
+| 개발 도구 | Eclipse, PgAdmin, Maven, Java ORM Plugin |
 | 프레임 워크 | Spring Framework 5.3.4, MyBatis, Bootstrap |
 | 데이터베이스 | PostgreSQL 12.9 |
 | WAS | Apache Tomcat 9.0 |
