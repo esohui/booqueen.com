@@ -44,7 +44,7 @@
 | WAS | Apache Tomcat 9.0 |
 | 웹 브라우저 | Chrome |
 | 버전관리 시스템 | Git, Github |
-| 라이브러리 | JSTL, lombok, aspectj, servlet-api, spring-security-web, jackson, poi, amazonaws, commons-fileupload |
+| 라이브러리 | JSTL, lombok, aspectj, servlet-api, jackson, poi, amazonaws, commons-fileupload |
 | 오픈소스 | Kakao Map API, Kakao Login API, IamPort API |
 
 <br><br>
